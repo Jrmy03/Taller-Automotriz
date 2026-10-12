@@ -1,3 +1,8 @@
 <Solution>
-  <Project Path="TallerMotorSync.csproj" />
+  <Folder Name="/src/">
+    <Project Path="src/MotorSync.API/MotorSync.API.csproj" />
+    <Project Path="src/MotorSync.Application/MotorSync.Application.csproj" />
+    <Project Path="src/MotorSync.Domain/MotorSync.Domain.csproj" />
+    <Project Path="src/MotorSync.Infrastructure/MotorSync.Infrastructure.csproj" />
+  </Folder>
 </Solution>
