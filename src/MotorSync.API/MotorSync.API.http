@@ -1,0 +1,24 @@
+@MotorSync.API_HostAddress = https://localhost:7084
+
+### 1. Obtener todos los clientes
+GET {{MotorSync.API_HostAddress}}/api/clientes
+Accept: application/json
+
+### 2. Obtener solo clientes activos
+GET {{MotorSync.API_HostAddress}}/api/clientes?soloActivos=true
+Accept: application/json
+
+### 3. Registrar un nuevo cliente
+POST {{MotorSync.API_HostAddress}}/api/clientes
+Content-Type: application/json
+
+{
+  "identificacion": "118880999",
+  "nombreCompleto": "Jeremy López",
+  "telefono": "8888-1111",
+  "correo": "jeremy@gmail.com"
+}
+
+### 4. Buscar cliente por identificación
+GET {{MotorSync.API_HostAddress}}/api/clientes/118880999
+Accept: application/json
